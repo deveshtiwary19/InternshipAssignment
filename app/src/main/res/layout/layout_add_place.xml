@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Add Places from here"
+                android:fontFamily="serif"
+                android:layout_margin="15dp"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/addimage_ic"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image_addPlace"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#A9A9A9"
+                android:padding="2dp"
+                android:hint="Enter Place/City Name"
+                android:textColor="@color/black"
+                android:id="@+id/cityname_addPlace"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/addBtn_addPlace"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttons"
+                android:text="Add City/Place"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+</RelativeLayout>

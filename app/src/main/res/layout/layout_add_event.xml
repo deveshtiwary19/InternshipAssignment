@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Add Events from here"
+                android:fontFamily="serif"
+                android:layout_margin="15dp"
+                />
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="15dp"
+               app:cardCornerRadius="10dp"
+               >
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="250dp"
+                   android:src="@drawable/addimage_ic"
+                   android:scaleType="fitXY"
+                   android:id="@+id/image_addEvent"
+
+                   />
+           </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#A9A9A9"
+            android:padding="2dp"
+            android:hint="Enter Event Title"
+            android:textColor="@color/black"
+            android:id="@+id/title_addEvent"
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#A9A9A9"
+                android:padding="2dp"
+                android:hint="Enter Event Dates"
+                android:textColor="@color/black"
+                android:id="@+id/dates_addEvent"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#A9A9A9"
+                    android:padding="2dp"
+                    android:hint="Event City"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/city_addEvent"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#A9A9A9"
+                    android:padding="2dp"
+                    android:hint="Event Fee"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:id="@+id/fee_addEvent"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/addBtn_addEvent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttons"
+                android:text="Add Event"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+</RelativeLayout>

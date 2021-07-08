@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mainlayout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recycler_events"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/searchbar"
+                    android:drawableLeft="@drawable/search_ic"
+                    android:padding="5dp"
+                    android:textColor="#A9A9A9"
+                    android:text="Where are you going?"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/searchBar_events"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Explore Events"
+                android:textColor="#A9A9A9"
+                android:textSize="18sp"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_places"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Categories"
+                android:textColor="#A9A9A9"
+                android:textSize="18sp"
+                />
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:cardCornerRadius="25dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="150dp"
+                           android:layout_height="200dp"
+                           >
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/movies"
+                               android:scaleType="fitXY"
+                               />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:textColor="@color/white"
+                               android:textAllCaps="true"
+                               android:textSize="22sp"
+                               android:textStyle="bold"
+                               android:fontFamily="serif"
+                               android:text="Movies"
+                               android:gravity="center"
+                               android:layout_centerInParent="true"
+                               />
+
+
+
+
+
+                       </RelativeLayout>
+                   </androidx.cardview.widget.CardView>
+
+
+
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:cardCornerRadius="25dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="150dp"
+                           android:layout_height="200dp"
+                           >
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/music"
+                               android:scaleType="fitXY"
+                               />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:textColor="@color/white"
+                               android:textAllCaps="true"
+                               android:textSize="22sp"
+                               android:textStyle="bold"
+                               android:fontFamily="serif"
+                               android:text="MUSIC"
+                               android:gravity="center"
+                               android:layout_centerInParent="true"
+                               />
+
+
+
+
+
+                       </RelativeLayout>
+                   </androidx.cardview.widget.CardView>
+
+
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:cardCornerRadius="25dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="150dp"
+                           android:layout_height="200dp"
+                           >
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/dance"
+                               android:scaleType="fitXY"
+                               />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:textColor="@color/white"
+                               android:textAllCaps="true"
+                               android:textSize="22sp"
+                               android:textStyle="bold"
+                               android:fontFamily="serif"
+                               android:text="Dance"
+                               android:gravity="center"
+                               android:layout_centerInParent="true"
+                               />
+
+
+
+
+
+                       </RelativeLayout>
+                   </androidx.cardview.widget.CardView>
+
+
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:cardCornerRadius="25dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="10dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="150dp"
+                           android:layout_height="200dp"
+                           >
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/food"
+                               android:scaleType="fitXY"
+                               />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:textColor="@color/white"
+                               android:textAllCaps="true"
+                               android:textSize="22sp"
+                               android:textStyle="bold"
+                               android:fontFamily="serif"
+                               android:text="Food"
+                               android:gravity="center"
+                               android:layout_centerInParent="true"
+                               />
+
+
+
+
+
+                       </RelativeLayout>
+                   </androidx.cardview.widget.CardView>
+
+
+
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add_ic"
+        android:id="@+id/addBtn_home"
+        />
+
+
+
+</RelativeLayout>
